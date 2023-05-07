@@ -1,0 +1,232 @@
+:root {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.6rem;
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.header {
+    width: 100%;
+    background-color: hsl(4, 80%, 52%);
+    padding-block: 2rem;
+}
+
+.header .container {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 4rem;
+}
+
+.Pomodoro {
+    max-width: 41rem;
+    width: 100%;
+    padding-top: 4rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.content {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.form--control label {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    padding-bottom: .5rem;
+}
+
+.form--control input {
+    max-width: 12rem;
+    width: 100%;
+    height: 10rem;
+    border-radius: .8rem;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    box-shadow: .4rem .3rem 1rem rgba(0, 0, 0, .6);
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: white;
+    transition: all 300ms;
+}
+
+.form--control input:is(:hover, :focus-within) {
+    box-shadow: .4rem .3rem 1rem rgba(87, 85, 85, 0.6);
+}
+
+.form--control input::-webkit-outer-spin-button,
+.form--control input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.start--btn {
+    background-color: hsl(4, 80%, 52%);
+    color: white;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding-block: 1rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 300ms;
+    box-shadow: 0 .6rem .8rem rgba(20, 20, 20, 0.6);
+}
+
+.start--btn:is(:hover, :focus) {
+    background-color: hsl(4, 60%, 53%);
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.clock {
+    width: 14rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    border-radius: 50%;
+    box-shadow: .4rem .3rem 1rem rgba(0, 0, 0, .6);
+}
+
+.clock p {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.sessoes {
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(0, 2%, 44%);
+}
+
+.finished {
+    margin-top: 8rem;
+    width: 100%;
+    display: grid;
+    gap: 1.6rem;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: green;
+    text-align: center;
+}
+
+.finished--btn {
+    background-color: hsl(4, 80%, 52%);
+    color: white;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding-block: 1rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 300ms;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 .6rem .8rem rgba(20, 20, 20, 0.6);
+}
+
+.hiden {
+    display: none;
+}

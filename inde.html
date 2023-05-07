@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-png" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timer || Pomodoro</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+        <script src="assets/js/script.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="inde.html" class="logo">Pomodoro Timer</a>
+                <div class="control--btn">
+                    <button class="btn hiden" id="play">
+                        <i class="bx bx-play-circle"></i>
+                    </button>
+                    <button class="btn hiden" id="pause">
+                        <i class="bx bx-pause-circle"></i>
+                    </button>
+                </div>
+                <audio id="lofi" src="assets/audio/lo-fi.mp3" type="audio/mpeg"></audio>
+            </div>
+        </header>
+        <main>
+            <section class="Pomodoro">
+                <form class="content">
+                    <div class="group">
+                        <div class="form--control">
+                            <label for="iacao">Ação</label>
+                            <input type="number" name="acão" id="iacao" />
+                            <small id="erro--acao" class="erro"></small>
+                        </div>
+                        <div class="form--control">
+                            <label for="ipausa">Pausa</label>
+                            <input type="number" name="Pausa" id="ipausa" />
+                            <small id="erro--Pausa" class="erro"></small>
+                        </div>
+                        <div class="form--control">
+                            <label for="isection">Sessões</label>
+                            <input type="number" name="Sessoes" id="isection" />
+                            <small id="erro--Sessoes" class="erro"></small>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Iniciar" class="start--btn" />
+                </form>
+                <div class="timer hiden">
+                    <h2 class="title"></h2>
+
+                    <div class="clock">
+                        <p><span class="minutes"></span> : <span class="second"></span></p>
+                    </div>
+
+                    <p class="sessoes"><span id="section"></span> sessão restante</p>
+                </div>
+                <div class="finished hiden">
+                    <h1 class="heading">Parabéns! você terminou duas tarefas.</h1>
+                    <a href="inde.html" class="finished--btn">voltar</a>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
